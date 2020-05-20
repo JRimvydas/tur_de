@@ -1,5 +1,5 @@
 <?php
-
+require_once 'logic.php';
 ?>
 <!doctype html>
 <html lang="en">
@@ -14,6 +14,17 @@
         <link rel="stylesheet" href="assets/css/style.css">
     </head>
     <body>
-
+        <main>
+            <div class="road">
+                <?php foreach ($tour['participants'] as $key => $participant) : ?>
+                <div class="bicyclist has-text-centered has-text-white is-size-4"
+                     style="top: <?php print $participant['y']; ?>%; left: <?php print $participant['x']; ?>%;
+                           z-index: <?php print $participant['x']; ?>">
+                    <?php print $participant['first_name']; ?>
+                    <p class="title has-text-white is-5"><?php print $participant['bike']; ?></p>
+                </div>
+                <?php endforeach; ?>
+            </div>
+        </main>
     </body>
 </html>
