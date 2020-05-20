@@ -3,6 +3,7 @@ require_once 'logic.php';
 ?>
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -64,12 +65,14 @@ require_once 'logic.php';
                             <td><?php print $winner['first_name']; ?></td>
                             <td><?php print $winner['last_name']; ?></td>
                         </tr>
-                        <?php foreach($tour['history'] as $key => $year) : ?>
-                            <tr>
-                                <td><?php print $year['years'] ?></td>
-                                <td><?php print $year['winner_name'] ?></td>
-                                <td><?php print $year['winner_surname'] ?></td>
-                            </tr>
+                        <?php foreach($tour['history'] as $key => $year) : ?>                          
+
+                        <tr>
+                            <td><?php print $year['years'] ?></td>
+                            <td><?php print $year['winner_name'] ?></td>
+                            <td><?php print $year['winner_surname'] ?></td>
+                        </tr>
+
                         <?php endforeach;  ?>
                     </tbody>
                 </table>
@@ -77,4 +80,5 @@ require_once 'logic.php';
         </div>
     </main>
 </body>
+
 </html>

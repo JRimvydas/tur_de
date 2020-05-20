@@ -135,6 +135,7 @@ $tour = [
     ]
 ];
 
+
 $range = range(0, 80, 15);
 shuffle($range);
 
@@ -150,20 +151,17 @@ foreach ($tour['participants'] as $key => $participant) {
     $participant['x'] = $range[$key];
     $participant['y'] = rand(27, 55);
 
+
     $tour['participants'][$key] = $participant;
 }
-
-usort($tour['participants'], function ($item1, $item2) {
+usort($tour['participants'], function ($item1, $item2){
     return $item1['x'] <=> $item2['x'];
 });
-
-$winner = end($tour['participants']);
-
-/*var_dump($tour['participants']);*/
+$winner =  end($tour['participants']);
+// var_dump($tour['participants']);
 
 foreach ($tour['history'] as $key => $value) {
     $value['winner_name'] = $tour['available_first_name'][array_rand($tour['available_first_name'])];
     $value['winner_surname'] = $tour['available_last_name'][array_rand($tour['available_last_name'])];
     $tour['history'][$key] = $value;
 }
-
