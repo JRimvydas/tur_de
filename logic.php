@@ -6,27 +6,33 @@ $tour = [
     'history' => [
         [
             'years' => '2019',
-            'winner' => '',
+            'winner_name' => '',
+            'winner_surname' => '',
         ],
         [
             'years' => '2018',
-            'winner' => '',
+            'winner_surname' => '',
+            'winner_name' => '',
         ],
         [
             'years' => '2017',
-            'winner' => '',
+            'winner_surname' => '',
+            'winner_name' => '',
         ],
         [
             'years' => '2016',
-            'winner' => '',
+            'winner_surname' => '',
+            'winner_name' => '',
         ],
         [
             'years' => '2015',
-            'winner' => '',
+            'winner_surname' => '',
+            'winner_name' => '',
         ],
         [
             'years' => '2014',
-            'winner' => '',
+            'winner_surname' => '',
+            'winner_name' => '',
         ],
     ],
 
@@ -42,8 +48,7 @@ $tour = [
         'https://avatars.mds.yandex.net/get-pdb/2041353/ad01c8e6-2092-41c5-9cf4-c6404fb92ae3/s1200?webp=false',
         'https://i.pinimg.com/originals/d5/c0/00/d5c0004d1115be0025c2eb5c743cd306.jpg'
     ],
-        
-    ],
+
 
     'bloopers' => [
         'https://media.giphy.com/media/RhSiIe2u05WOn0obtb/giphy.gif',
@@ -148,10 +153,17 @@ foreach ($tour['participants'] as $key => $participant) {
     $tour['participants'][$key] = $participant;
 }
 
-/*var_dump($tour['participants']);*/   
+usort($tour['participants'], function ($item1, $item2) {
+    return $item1['x'] <=> $item2['x'];
+});
+
+$winner = end($tour['participants']);
+
+/*var_dump($tour['participants']);*/
 
 foreach ($tour['history'] as $key => $value) {
-    $value['winner'] = $tour['available_first_name'][array_rand($tour['available_first_name'])] . ' ' . $tour['available_last_name'][array_rand($tour['available_last_name'])];
+    $value['winner_name'] = $tour['available_first_name'][array_rand($tour['available_first_name'])];
+    $value['winner_surname'] = $tour['available_last_name'][array_rand($tour['available_last_name'])];
     $tour['history'][$key] = $value;
 }
 

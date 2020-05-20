@@ -1,8 +1,5 @@
 <?php
-
 require_once 'logic.php';
-
-
 ?>
 <!doctype html>
 <html lang="en">
@@ -20,7 +17,7 @@ require_once 'logic.php';
     <div class="container">
         <nav class="navbar" role="navigation" aria-label="main navigation">
             <div class="navbar-brand">
-                <a class="navbar-item" href="https://bulma.io">
+                <a class="navbar-item" href="index.php">
                     <img src="https://st2.depositphotos.com/1413332/6081/v/950/depositphotos_60815475-stock-illustration-cycling.jpg" width="112" height="28">
                 </a>
 
@@ -50,19 +47,34 @@ require_once 'logic.php';
             </div>
         </div>
     </section>
-  <main class="history_bg">
-    <div class="container">
-        <div class="columns is-multiline">
-            <div class="column is-4 is-offset-one-quarter">
-                <ul class="list">
-                    <li class="list-item">Kitas čempionas gali būti tu ! ! !</li>
-                    <?php foreach ($tour['history'] as $year): ?>
-                        <li class="list-item"><?php print "{$year['years']}: {$year['winner']}" ?></li>
-                    <?php endforeach; ?>
-                </ul>
+    <main class="history_bg">
+        <div class="container">
+            <div class="table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Year</th>
+                            <th>Name</th>
+                            <th>Surname</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2020</td>
+                            <td><?php print $winner['first_name']; ?></td>
+                            <td><?php print $winner['last_name']; ?></td>
+                        </tr>
+                        <?php foreach($tour['history'] as $key => $year) : ?>
+                            <tr>
+                                <td><?php print $year['years'] ?></td>
+                                <td><?php print $year['winner_name'] ?></td>
+                                <td><?php print $year['winner_surname'] ?></td>
+                            </tr>
+                        <?php endforeach;  ?>
+                    </tbody>
+                </table>
             </div>
         </div>
-    </div>
-</main>
+    </main>
 </body>
 </html>
