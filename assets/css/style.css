@@ -1,5 +1,6 @@
 
 .road {
+    position: relative;
     height: 100vh;
     width: 100%;
     background-image: url("https://store.donanimhaber.com/1f/77/bd/1f77bdbd356a56a469d1ddb8b79da173.jpg");

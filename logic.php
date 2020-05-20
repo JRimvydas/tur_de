@@ -42,8 +42,7 @@ $tour = [
         'https://avatars.mds.yandex.net/get-pdb/2041353/ad01c8e6-2092-41c5-9cf4-c6404fb92ae3/s1200?webp=false',
         'https://i.pinimg.com/originals/d5/c0/00/d5c0004d1115be0025c2eb5c743cd306.jpg'
     ],
-        
-    ],
+
 
     'bloopers' => [
         'https://media.giphy.com/media/RhSiIe2u05WOn0obtb/giphy.gif',
