@@ -1,9 +1,11 @@
 <?php
 
+require_once 'logic.php';
+
+
 ?>
 <!doctype html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -48,6 +50,19 @@
             </div>
         </div>
     </section>
+  <main class="history_bg">
+    <div class="container">
+        <div class="columns is-multiline">
+            <div class="column is-4 is-offset-one-quarter">
+                <ul class="list">
+                    <li class="list-item">Kitas čempionas gali būti tu ! ! !</li>
+                    <?php foreach ($tour['history'] as $year): ?>
+                        <li class="list-item"><?php print "{$year['years']}: {$year['winner']}" ?></li>
+                    <?php endforeach; ?>
+                </ul>
+            </div>
+        </div>
+    </div>
+</main>
 </body>
-
 </html>

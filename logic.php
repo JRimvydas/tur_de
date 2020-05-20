@@ -2,6 +2,31 @@
  $tour = [
         'available_first_name' => ['John', 'Jack', 'Danny', 'Tom', 'Kevin', 'Emil', 'Bill'],
         'available_last_name' => ['Rambo', 'Daniels', 'Potter', 'Kruz', 'Dick', 'Pussy', 'Ass'],
+         'history' => [
+              [
+                  'years' => '2019',
+                  'winner' => '',
+              ],
+              [
+                  'years' => '2018',
+                  'winner' => '',
+              ],
+              [
+                  'years' => '2017',
+                  'winner' => '',
+              ],
+              [
+                  'years' => '2016',
+                  'winner' => '',
+              ],
+              [
+                  'years' => '2015',
+                  'winner' => '',
+              ],
+              [
+                  'years' => '2014',
+                  'winner' => '',
+              ],
         'photo' => [
             'https://chipblue.net/joomla/angles/media/k2/items/cache/867519228d1d5325856fc61d710ded0e_XL.jpg',
             ' https://yt3.ggpht.com/a/AATXAJzpzjt-pSXA6_Rs-OHfJeGgWcmYBL-Do0zOpg=s900-c-k-c0xffffffff-no-rj-mo',
@@ -107,5 +132,7 @@
 
         $tour['participants'][$key] = $participant;
     }
-
-/*var_dump($tour);*/
+foreach ($tour['history'] as $key => $value) {
+    $value['winner'] = $tour['available_first_name'][array_rand($tour['available_first_name'])] . ' ' . $tour['available_last_name'][array_rand($tour['available_last_name'])];
+    $tour['history'][$key] = $value;
+}
