@@ -10,6 +10,16 @@
             'https://yt3.ggpht.com/a/AGF-l7_XfI4ZgT67b8u-VwaSfh1Qzw3YMmJy3YcSBw=s900-c-k-c0xffffffff-no-rj-mo',
             'https://yt3.ggpht.com/a/AATXAJxJjV1wiTMYp-oSMtGtX6FjL-W6DMyMPXXxCA=s900-c-k-c0xffffffff-no-rj-mo'
         ],
+
+        'bloopers' => [
+            'https://media.giphy.com/media/RhSiIe2u05WOn0obtb/giphy.gif',
+            'https://media.giphy.com/media/iqryv05RJMVlm/giphy.gif',
+            'https://media.giphy.com/media/ffkBvDVST82UU/giphy.gif',
+            'https://media.giphy.com/media/3o6Ztcsgaf9hPYRbCE/giphy.gif',
+            'https://media.giphy.com/media/8m5d7288RnnUDpc83s/giphy.gif',
+            'https://media.giphy.com/media/aYLk2UUhOrpuM/giphy.gif'
+        ],
+
         'participants' => [
             [
                 'first_name' => '',

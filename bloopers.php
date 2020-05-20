@@ -1,8 +1,7 @@
 <?php
-
+require_once 'logic.php';
 ?>
-<!doctype html>
-<html lang="en">
+</html>
     <head>
         <meta charset="UTF-8">
         <meta name="viewport"
@@ -47,5 +46,21 @@
             </div>
         </div>
     </section>
+      <div class="container">
+        <div class="participants columns is-multiline">
+            <?php foreach ($tour['bloopers'] as $blooper) : ?>
+                <div class="column is-4">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="<?php print $blooper ?>" alt="bloopers img">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            <?php endforeach; ?>
+        </div>
+    </div>
     </body>
 </html>
+
