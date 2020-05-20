@@ -6,6 +6,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom;
+    position: relative;
 }
 
 .bicyclist {
@@ -26,11 +27,9 @@ body{
     background: url("https://images.unsplash.com/photo-1506316940527-4d1c138978a0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=889&q=80");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    height: 80vh;
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    padding-top: 20px;
 }
 .list{
     background:rgba(255,255,255, 0.3);
@@ -43,5 +42,24 @@ body{
 }
 .navbar-item img{
     max-height: 70px;
+}
+table{
+    width: 100%;
+    text-align: center;
+}
+.table{
+    width: 70%;
+    margin: 0 auto;
+    padding: 8px;
+    border-radius: 10px !important;
+    background-color: rgb(80, 175, 144);
+    color: white;
+    box-shadow: 0px 0px 4px 4px rgb(165, 118, 30);
+}
+th, td{
+    text-align: center !important;
+}
+td{
+    border: 1px solid black;
 }
 
