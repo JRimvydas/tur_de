@@ -64,6 +64,7 @@ require_once 'logic.php';
                                     <p class="title is-4"><?php print "{$participant['first_name']} {$participant['last_name']}" ?></p>
                                     <hr>
                                     <p class="subtitle is-6"><?php print "Win: {$participant['win']} | Loose: {$participant['lose']}"; ?></p>
+                                    <p class="title is-4"><?php print "{$participant['win_ratio']} &percnt;" ?></p>
                                 </div>
                             </div>
                         </div>
