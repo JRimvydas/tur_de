@@ -3,7 +3,7 @@ require_once 'logic.php';
 ?>
 <!doctype html>
 <html lang="en">
-
+  
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -65,6 +65,7 @@ require_once 'logic.php';
                                     <hr>
                                     <p class="subtitle is-6"><?php print "Win: {$participant['win']} | Loose: {$participant['lose']}"; ?></p>
                                     <p class="title is-4"><?php print "{$participant['win_ratio']} &percnt;" ?></p>
+
                                 </div>
                             </div>
                         </div>

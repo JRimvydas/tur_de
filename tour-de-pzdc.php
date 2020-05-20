@@ -1,9 +1,9 @@
 <?php
-
+require_once 'logic.php';
 ?>
 <!doctype html>
 <html lang="en">
-
+  
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -48,6 +48,16 @@
             </div>
         </div>
     </section>
+  <div class="road">
+                <?php foreach ($tour['participants'] as $key => $participant) : ?>
+                <div class="bicyclist has-text-centered has-text-white is-size-4"
+                     style="top: <?php print $participant['y']; ?>%; left: <?php print $participant['x']; ?>%;
+                           z-index: <?php print $participant['x']; ?>">
+                    <?php print $participant['first_name']; ?>
+                    <p class="title has-text-white is-5"><?php print $participant['bike']; ?></p>
+                </div>
+                <?php endforeach; ?>
+            </div>
 </body>
 
 </html>

@@ -1,4 +1,22 @@
 
+.road {
+    height: 100vh;
+    width: 100%;
+    background-image: url("https://store.donanimhaber.com/1f/77/bd/1f77bdbd356a56a469d1ddb8b79da173.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.bicyclist {
+    /*border: 1px solid red;*/
+    position: absolute;
+    height: 30%;
+    width: 19%;
+    background-image: url("https://i.pinimg.com/originals/55/74/38/55743802c453a704aed13cd4d7c8bf32.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
 
 body{
     box-sizing: border-box;
@@ -26,3 +44,4 @@ body{
 .navbar-item img{
     max-height: 70px;
 }
+
