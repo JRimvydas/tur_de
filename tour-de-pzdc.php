@@ -19,7 +19,7 @@ require_once 'logic.php';
         <div class="container">
             <nav class="navbar" role="navigation" aria-label="main navigation">
                 <div class="navbar-brand">
-                    <a class="navbar-item" href="https://bulma.io">
+                    <a class="navbar-item" href="index.php">
                         <img src="https://st2.depositphotos.com/1413332/6081/v/950/depositphotos_60815475-stock-illustration-cycling.jpg"
                              width="112" height="28">
                     </a>
@@ -52,12 +52,18 @@ require_once 'logic.php';
             </div>
         </section>
         <div class="road">
+            <div class="live">
+                <img src="https://pbs.twimg.com/media/ECl69pnXUAIAiDs.png:large" alt="live">
+                <h1 class="title  has-text-centered is-2">Current
+                    leader: <?php print "{$winner['first_name']} {$winner['last_name']}" ?></h1>
+            </div>
             <?php foreach ($tour['participants'] as $key => $participant) : ?>
-                <div class="bicyclist has-text-centered has-text-white is-size-4"
+                <div class="bicyclist has-text-centered
+                 has-text-white is-size-4 bike-<?php print $participant['bike']; ?>"
                      style="top: <?php print $participant['y']; ?>%; left: <?php print $participant['x']; ?>%;
                              z-index: <?php print $participant['y']; ?>">
-                    <?php print $participant['first_name']; ?>
-                    <p class="title has-text-white is-5"><?php print $participant['bike']; ?></p>
+                    <p><?php print $participant['first_name']; ?></p>
+                    <p class="title is-5"><?php print $participant['bike']; ?></p>
                 </div>
             <?php endforeach; ?>
         </div>

@@ -18,7 +18,7 @@ require_once 'logic.php';
     <div class="container">
         <nav class="navbar" role="navigation" aria-label="main navigation">
             <div class="navbar-brand">
-                <a class="navbar-item" href="https://bulma.io">
+                <a class="navbar-item" href="index.php">
                     <img src="https://st2.depositphotos.com/1413332/6081/v/950/depositphotos_60815475-stock-illustration-cycling.jpg" width="112" height="28">
                 </a>
 
@@ -65,12 +65,14 @@ require_once 'logic.php';
                             <td><?php print $winner['first_name']; ?></td>
                             <td><?php print $winner['last_name']; ?></td>
                         </tr>
-                        <?php foreach($tour['history'] as $key => $year) : ?>
+                        <?php foreach($tour['history'] as $key => $year) : ?>                          
+
                         <tr>
                             <td><?php print $year['years'] ?></td>
                             <td><?php print $year['winner_name'] ?></td>
                             <td><?php print $year['winner_surname'] ?></td>
                         </tr>
+
                         <?php endforeach;  ?>
                     </tbody>
                 </table>

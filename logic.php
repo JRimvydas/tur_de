@@ -160,7 +160,6 @@ usort($tour['participants'], function ($item1, $item2){
 $winner =  end($tour['participants']);
 // var_dump($tour['participants']);
 
-
 foreach ($tour['history'] as $key => $value) {
     $value['winner_name'] = $tour['available_first_name'][array_rand($tour['available_first_name'])];
     $value['winner_surname'] = $tour['available_last_name'][array_rand($tour['available_last_name'])];

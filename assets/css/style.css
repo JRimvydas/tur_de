@@ -10,37 +10,116 @@
     position: relative;
 }
 
+.live {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.live > h1 {
+    width: 50%;
+    color: red;
+    text-shadow: -0 -1px 1px #000000,
+    0 -1px 1px #000000,
+    -0 1px 1px #000000,
+    0 1px 1px #000000,
+    -1px -0 1px #000000,
+    1px -0 1px #000000,
+    -1px 0 1px #000000,
+    1px 0 1px #000000,
+    -1px -1px 1px #000000,
+    1px -1px 1px #000000,
+    -1px 1px 1px #000000,
+    1px 1px 1px #000000,
+    -1px -1px 1px #000000,
+    1px -1px 1px #000000,
+    -1px 1px 1px #000000,
+    1px 1px 1px #000000;
+}
+
+.live > img {
+    width: 15%;
+}
+
 .bicyclist {
     /*border: 1px solid red;*/
     position: absolute;
     height: 30%;
     width: 19%;
-    background-image: url("https://i.pinimg.com/originals/55/74/38/55743802c453a704aed13cd4d7c8bf32.png");
     background-repeat: no-repeat;
     background-size: contain;
+}
+
+.bicyclist > p {
+    color: white;
+    text-shadow: -0 -1px 1px #000000,
+    0 -1px 1px #000000,
+    -0 1px 1px #000000,
+    0 1px 1px #000000,
+    -1px -0 1px #000000,
+    1px -0 1px #000000,
+    -1px 0 1px #000000,
+    1px 0 1px #000000,
+    -1px -1px 1px #000000,
+    1px -1px 1px #000000,
+    -1px 1px 1px #000000,
+    1px 1px 1px #000000,
+    -1px -1px 1px #000000,
+    1px -1px 1px #000000,
+    -1px 1px 1px #000000,
+    1px 1px 1px #000000;
+}
+
+.bike-1 {
+    background-image: url("../img/bike_1.png");
+}
+
+.bike-2 {
+    background-image: url("../img/bike_2.png");
+}
+
+.bike-3 {
+    background-image: url("../img/bike_3.png");
+}
+
+.bike-4 {
+    background-image: url("../img/bike_4.png");
+}
+
+.bike-5 {
+    background-image: url("../img/bike_5.png");
+}
+
+.bike-6 {
+    background-image: url("../img/bike_6.png");
 }
 
 body{
     box-sizing: border-box;
     margin: 0;
 }
+
 .history_bg{
-    background: url("https://images.unsplash.com/photo-1506316940527-4d1c138978a0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=889&q=80");
+    background-image: url("https://images.unsplash.com/photo-1506316940527-4d1c138978a0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=889&q=80");
     background-repeat: no-repeat;
     background-size: cover;
     height: 80vh;
     width: 100%;
     padding-top: 20px;
 }
+
 .list{
     background:rgba(255,255,255, 0.3);
 }
+
 .list-item{
     color: black!important;
 }
+
 .participants{
     margin-top: 15px;
 }
+
 .navbar-item img{
     max-height: 70px;
 }
@@ -60,6 +139,29 @@ table{
 th, td{
     text-align: center !important;
 }
+td{
+    border: 1px solid black;
+}
+
+table{
+    width: 100%;
+    text-align: center;
+}
+
+.table{
+    width: 70%;
+    margin: 0 auto;
+    padding: 8px;
+    border-radius: 10px !important;
+    background-color: rgb(50, 152, 220);
+    color: white;
+    box-shadow: 0px 0px 4px 4px rgb(165, 118, 30);
+}
+
+th, td{
+    text-align: center !important;
+}
+
 td{
     border: 1px solid black;
 }
